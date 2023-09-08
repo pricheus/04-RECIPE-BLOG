@@ -24,6 +24,11 @@ body {
 p {
   font-style: italic;
 }
+
+.about {
+  font-size: 0.9rem;
+}
+
 .dots {
   color: #828282;
   transform: rotate(90deg);
@@ -51,6 +56,11 @@ img {
 .prepTime {
   padding-top: 5%;
 }
+
+.prepDetails {
+  padding: 0;
+}
+
 .mealDetails {
   display: flex;
 }
@@ -58,6 +68,11 @@ img {
 h5 {
   text-transform: uppercase;
   color: #828282;
+}
+
+h4,
+h5 {
+  font-size: 0.6rem;
 }
 
 article {
@@ -104,3 +119,38 @@ h2 {
 }
 
 /*Instructions*/
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+}
+.orangeBox {
+  background: #f2994a;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instructionsAlign {
+  display: flex;
+  padding: 3% 0;
+}
+
+.instructionsDetails {
+  padding: 0 0 0 3%;
+}
+
+/*footer*/
+footer {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
