@@ -6,151 +6,361 @@
 
 html {
   height: 100%;
+  font-size: 12px;
 }
 
 body {
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
-
-  padding: 5% 3%;
-  background-color: #fafafa;
   color: #333;
-}
-/*header*/
-.title {
-  font-size: 1.7rem;
-  font-family: "Playfair Display", serif;
-}
-p {
-  font-style: italic;
+  padding: 5% 3% 0 3%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
-.about {
-  font-size: 0.9rem;
+/*header*/
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 31.99px;
+}
+
+.description {
+  display: flex;
+  padding-top: 3%;
+  position: relative;
+  right: 28px;
 }
 
 .dots {
-  color: #828282;
   transform: rotate(90deg);
+  position: relative;
+  bottom: 30px;
+  color: #828282;
 }
 
-.schedule {
-  margin-right: 0%;
+.text {
+  padding-left: 10%;
+  width: 90%;
+  float: right;
+  font-style: italic;
 }
 
-.fork {
-  color: #f2994a;
+.cheesecake {
+  margin-top: 10%;
+}
+/*mainContent*/
+
+.mainContent {
+  margin-top: 10%;
 }
 
-/*main*/
-main {
-  width: 100vw;
-  height: 80vh;
-}
 img {
-  width: 94%;
-  height: 39, 93%;
+  width: 100%;
   border-radius: 9px;
-  margin-top: 5%;
-}
-.prepTime {
-  padding-top: 5%;
-}
-
-.prepDetails {
-  padding: 0;
 }
 
 .mealDetails {
   display: flex;
+  margin-top: 5%;
+  width: 35%;
 }
 
+.orangeFork {
+  color: #f2994a;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clock {
+  margin-right: 2%;
+}
+.details {
+  position: relative;
+  left: 1%;
+}
 h5 {
   text-transform: uppercase;
   color: #828282;
 }
 
-h4,
-h5 {
-  font-size: 0.6rem;
+/*main*/
+
+main {
+  margin-top: 10%;
+}
+.ingredients_title {
+  text-transform: capitalize;
+  font-family: Playfair Display;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5%;
 }
 
-article {
+/*ingredients*/
+.crust_cake {
+  font-family: Playfair Display;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 5%;
+}
+
+.checkBoxes {
   display: flex;
-  justify-content: space-between;
+  margin-top: 5%;
+  width: 100%;
+}
+.greyBox {
+  border: 1px solid #828282;
+  width: 21px;
+  height: 21px;
+  border-radius: 4px;
+}
+
+.directives {
+  width: 80%;
+  padding-left: 3%;
+  line-height: 20px;
+}
+
+/*nstruction*/
+.instructions {
+  padding-top: 10%;
+}
+.instructions_title {
+  text-transform: capitalize;
+  font-family: Playfair Display;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.instructions_container {
   padding-top: 5%;
 }
 
-/*Ingredients*/
-
-.ingredients {
-  padding-top: 10%;
-}
-
-.graham_cheese {
-  font-family: "Playfair Display", serif;
-  font-style: italic;
-  font-weight: 500;
-  padding: 0 0 2% 0;
-}
-
-h2 {
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  font-size: 1.25rem;
-  padding: 0 0 2% 0;
-}
-
-.greyBox {
-  border: 1px solid #828282;
-  border-radius: 4px;
-  width: 21px;
-  height: 21px;
-}
-
-.list {
+.instructions_number {
   display: flex;
-  padding: 2% 0;
+  padding-bottom: 2%;
 }
 
-.details {
-  padding-left: 2%;
-  line-height: 27px;
-}
-
-/*Instructions*/
-
-.instructions {
-  display: flex;
-  flex-direction: column;
-}
-.orangeBox {
-  background: #f2994a;
+.number {
+  background-color: #f2994a;
   color: #fff;
+  font-family: Playfair Display;
+  padding: auto;
   width: 36px;
   height: 36px;
   border-radius: 6px;
-  font-family: "Playfair Display", serif;
-  font-size: 1.5rem;
+  font-size: 24px;
+  font-weight: 700;
+
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.instructionsAlign {
+.instructions_text {
+  margin-left: 3%;
+  width: 70%;
+}
+
+.source {
+  color: #828282;
+  margin-top: 10%;
   display: flex;
-  padding: 3% 0;
-}
-
-.instructionsDetails {
-  padding: 0 0 0 3%;
-}
-
-/*footer*/
-footer {
-  position: absolute;
-  bottom: 0%;
+  justify-content: center;
   width: 100%;
+}
+/*footer*/
+
+#footer {
   display: flex;
   justify-content: center;
+  width: 100%;
+  align-items: center;
+  margin-top: 20%;
+  margin-bottom: 3%;
+}
+
+/*tablets*/
+@media screen and (min-width: 481px) and (orientation: portrait) {
+  body {
+    font-size: 1.2rem;
+    margin: 0 10%;
+  }
+
+  .description {
+    display: flex;
+    padding-top: 3%;
+  }
+
+  .dots {
+    transform: rotate(90deg);
+    position: relative;
+    bottom: 12%;
+    left: 4%;
+    color: #828282;
+    height: 100%;
+  }
+
+  .text {
+    padding-left: 8%;
+    width: 100%;
+    float: right;
+    font-style: italic;
+    position: relative;
+    right: 15px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .text {
+    width: 100%;
+    font-style: italic;
+    position: relative;
+  }
+  .mainContent {
+    margin-top: 5%;
+  }
+  .mealDetails {
+    display: none;
+  }
+
+  main {
+    margin-top: 5%;
+  }
+
+  .checkBoxes {
+    display: flex;
+    margin-top: 2%;
+    width: 100%;
+  }
+
+  .cheesecake {
+    margin-top: 3%;
+  }
+
+  .instructions_text {
+    margin-left: 3%;
+    width: 60%;
+  }
+
+  .source {
+    color: #828282;
+    margin-top: 10%;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+/*small deskop*/
+@media screen and (min-width: 769px) {
+  body {
+    font-size: 2rem;
+    margin: 0 10%;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+  /*description*/
+
+  .description {
+    display: flex;
+    padding-top: 3%;
+    position: relative;
+    right: 4%;
+  }
+
+  .dots {
+    transform: rotate(90deg);
+    position: relative;
+    bottom: 12%;
+    left: 4%;
+    color: #828282;
+    height: 100%;
+  }
+
+  .text {
+    padding-left: 6%;
+    width: 100%;
+    float: right;
+    font-style: italic;
+    position: relative;
+    right: 15px;
+  }
+  /*description*/
+
+  img {
+    width: 100%;
+  }
+  .mainContent {
+    margin-top: 5%;
+  }
+  .mealDetails {
+    display: none;
+  }
+
+  main {
+    margin-top: 2%;
+  }
+  .directives {
+    width: 80%;
+    padding-left: 3%;
+    line-height: 46px;
+  }
+
+  .checkBoxes {
+    display: flex;
+    margin-top: 2%;
+    width: 100%;
+  }
+
+  .cheesecake {
+    margin-top: 3%;
+  }
+
+  .instructions_text {
+    margin-left: 3%;
+    width: 60%;
+  }
+
+  .instructions_container {
+    padding-top: 2.2%;
+  }
+
+  .ingredients_title,
+  .instructions_title {
+    font-size: 3rem;
+  }
+
+  .greyBox {
+    width: 30px;
+    height: 30px;
+  }
+  .crust_cake {
+    font-size: 1.75rem;
+    font-weight: 500;
+  }
+  .source {
+    color: #828282;
+    margin-top: 10%;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+/*large deskop*/
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 0;
+  }
 }
