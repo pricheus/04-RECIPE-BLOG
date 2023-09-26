@@ -10,6 +10,312 @@ html {
 
 body {
   font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
   color: #333;
+  background-color: #fafafa;
+  padding: 5% 3% 0 3%;
 }
 /*header*/
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.about_the_meal {
+  display: flex;
+  width: 100%;
+  margin-top: 3%;
+}
+
+.dots {
+  transform: rotate(90deg);
+  color: #c4c4c4;
+  width: 8%;
+  height: 100%;
+}
+
+.desc {
+  width: 90%;
+  font-style: italic;
+  height: 100%;
+}
+
+/*main*/
+
+img {
+  border-radius: 12px;
+  margin-top: 10%;
+}
+
+.yields {
+  display: flex;
+  margin-top: 5%;
+  width: 30%;
+}
+
+.fork {
+  margin-right: 1.5%;
+}
+
+.orange {
+  color: #f2994a;
+}
+
+.grey_text {
+  text-transform: uppercase;
+  color: #bdbdbd;
+}
+
+.time {
+  display: flex;
+  margin-top: 2%;
+  justify-content: space-between;
+  width: 90%;
+}
+
+/*ingredients*/
+.ingredients {
+  margin-top: 10%;
+}
+
+.subtitle {
+  text-transform: capitalize;
+  font-family: "Playfair Display", serif;
+}
+
+.sub {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 1.5%;
+}
+
+.list {
+  display: flex;
+  margin-top: 3%;
+}
+
+.check_box {
+  width: 21px;
+  height: 21px;
+  border: 1px solid #bdbdbd;
+  border-radius: 6px;
+  margin-right: 2%;
+}
+
+.text_details {
+  width: 90%;
+  line-height: 27.07px;
+}
+
+/*instructions*/
+.instructions {
+  margin-top: 8%;
+}
+.instruction_title {
+  text-transform: capitalize;
+  font-family: "Playfair Display", serif;
+}
+
+.instructions_details {
+  display: flex;
+  height: 100%;
+  margin-top: 5%;
+  line-height: 2.5ch;
+}
+
+.orange_box {
+  background-color: #f2994a;
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  display: flex;
+  justify-content: center;
+  border-radius: 9px;
+  font-size: 1.75rem;
+  font-weight: bolder;
+  margin-right: 2.5%;
+}
+
+.txt {
+  width: 90%;
+}
+
+/*footer*/
+footer {
+  margin: 35% 0 5% 0;
+  text-align: center;
+}
+
+.username {
+  font-weight: bolder;
+  text-decoration: underline;
+  color: #828282;
+}
+
+.computer {
+  display: none;
+}
+/*sm mobile*/
+@media screen and (max-width: 320px) and (orientation: portrait) {
+}
+
+/*sm tablets*/
+@media screen and (min-width: 426px) and (orientation: portrait) {
+  body {
+    padding: 5% 10% 0 10%;
+  }
+
+  .text_details {
+    line-height: 30px;
+  }
+}
+
+/*md tablets*/
+@media screen and (min-width: 769px) and (orientation: portrait) {
+  body {
+    padding: 5% 10% 0 10%;
+  }
+  .about_the_meal {
+    position: relative;
+    right: 2.5%;
+  }
+  .dots {
+    margin-top: 2%;
+  }
+
+  .text_details {
+    line-height: 35px;
+  }
+}
+
+/*lg tablets*/
+@media screen and (min-width: 1024px) and (orientation: portrait) {
+  body {
+    padding: 5% 15% 0 15%;
+  }
+
+  .about_the_meal {
+    position: relative;
+    right: 2.5%;
+  }
+  .dots {
+    margin-top: 2%;
+  }
+}
+
+/*sm computers*/
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  body {
+    padding: 5% 10% 0 10%;
+  }
+
+  .phone {
+    display: block;
+    float: right;
+  }
+
+  .prep_details {
+    position: relative;
+    width: 19%;
+    height: 30%;
+    box-shadow: 0px 0px 20px 0px #0000001a;
+    border-radius: 12px;
+    padding: 3% 0 3% 2%;
+  }
+
+  .time {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .yields {
+    width: 100%;
+  }
+
+  .fork {
+    font-size: 48px;
+  }
+
+  .list {
+    width: 70%;
+  }
+
+  .text_details {
+    line-height: 30px;
+  }
+}
+
+/*md computers*/
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  body {
+    padding: 5% 15% 0 15%;
+    font-size: 2;
+  }
+
+  .prep_details {
+    position: relative;
+    width: 13%;
+    height: 25%;
+    box-shadow: 0px 0px 20px 0px #0000001a;
+    border-radius: 12px;
+    padding: 3% 0 3% 2%;
+  }
+
+  .time {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .yields {
+    width: 100%;
+  }
+
+  .fork {
+    font-size: 48px;
+  }
+
+  .list {
+    width: 70%;
+  }
+
+  .text_details {
+    line-height: 30px;
+  }
+}
+
+/*lg computers*/
+@media screen and (min-width: 1440px) and (orientation: landscape) {
+  body {
+    padding: 5% 10% 0 10%;
+    font-size: 1.8rem;
+  }
+
+  .about_the_meal {
+    position: relative;
+    right: 3%;
+    margin-top: 1%;
+  }
+  .dots {
+    margin-top: 3%;
+  }
+
+  .desc {
+    position: relative;
+    right: 2%;
+  }
+}
+
+/*2lg computers*/
+@media screen and (min-width: 1920px) and (orientation: landscape) {
+  body {
+    padding: 5% 25% 0 25%;
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+}
