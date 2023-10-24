@@ -58,6 +58,11 @@ img {
   margin-right: 1.5%;
 }
 
+.orange_box {
+  display: flex;
+  align-items: center;
+}
+
 .orange {
   color: #f2994a;
 }
@@ -167,9 +172,10 @@ footer {
 }
 
 /*sm tablets*/
-@media screen and (min-width: 426px) and (orientation: portrait) {
+@media screen and (min-width: 500px) and (orientation: portrait) {
   body {
     padding: 5% 10% 0 10%;
+    font-size: 1.2rem;
   }
 
   .text_details {
@@ -213,6 +219,7 @@ footer {
 /*sm computers*/
 @media screen and (min-width: 768px) and (orientation: landscape) {
   body {
+    font-size: 1.2rem;
     padding: 5% 10% 0 10%;
   }
 
@@ -256,7 +263,6 @@ footer {
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   body {
     padding: 5% 15% 0 15%;
-    font-size: 2;
   }
 
   .prep_details {
@@ -294,7 +300,6 @@ footer {
 @media screen and (min-width: 1440px) and (orientation: landscape) {
   body {
     padding: 5% 10% 0 10%;
-    font-size: 1.8rem;
   }
 
   .about_the_meal {
@@ -316,7 +321,7 @@ footer {
 @media screen and (min-width: 1920px) and (orientation: landscape) {
   body {
     padding: 5% 25% 0 25%;
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 
   .title {
